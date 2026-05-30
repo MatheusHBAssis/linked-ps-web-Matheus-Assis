@@ -22,7 +22,7 @@ body{
     right: 0;
     background: #fff;
     z-index: 1;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #004346;
     font-size: 1.7rem;
     height: 3.75rem; 
     width: 100%;
@@ -177,3 +177,35 @@ body{
 }
 
 
+.title-serv {
+    font-weight: normal;
+    font-size: 4.5rem;
+    margin-top: 4rem;
+}
+#servicos article {
+    max-width: 30rem;          
+    margin: 0 auto;              
+    text-align: center;            
+    padding: 0 1rem;
+}
+
+#servicos {
+    color: white;
+    padding: 3rem 1.5rem; 
+    
+}
+
+
+.sub-title-serv {
+    margin-top: 1.2rem;
+    margin-bottom: 1.25rem;
+}
+
+.short-line{
+  width: 10rem;              
+  height: 2px;               
+  background: #ffffff;      
+  margin: 1.25rem auto;      
+  border-radius: 2px;        
+  opacity: 0.95;
+}
