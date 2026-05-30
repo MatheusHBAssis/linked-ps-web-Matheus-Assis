@@ -108,23 +108,72 @@ body{
 }
 
 .btn-primary {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
     color: white;
     background-color: #004346;
     border: none;
     border-radius: 1rem;
-    padding: 0.75rem 4rem;
+    padding: 0.75rem 4rem;      
+    padding-left: 3.6rem;       
     cursor: pointer;
-    margin-left: 10rem;
+    margin-left: 10rem;         
     margin-top: 1rem;
+    z-index: 3;                
 }
+
 
 
 .btn-secondary {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
     color: #004346;
-    background-color: transparent;
-    border: 1px solid #004346;
+    background-color: white;
+    border: solid #004346 1px;
     border-radius: 1rem;
-    padding: 0.75rem 4rem;
+    padding: 0.75rem 4rem;      
+    padding-left: 3.6rem;       
     cursor: pointer;
-    margin-left: 3rem;
+    margin-left: 5rem;         
+    margin-top: 1rem;
+    z-index: 3;  
 }
+
+
+.btn-primary::before {
+    content: "";
+    position: absolute;
+    left: 12px;                 
+    top: 50%;
+    transform: translateY(-50%);
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border: 3px solid #fff;     
+    background: transparent;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.btn-secondary::before {
+    content: "";
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border: 2.5px solid #004346; 
+    background: transparent;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+
